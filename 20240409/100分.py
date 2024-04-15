@@ -26,7 +26,7 @@ features = [
         'properties': {
             'time': time * 1000,  # 轉換為JavaScript的時間戳
             'style': {'color' : 'red'},
-            'icon': 'circle',
+            'icon': 'marker-icon.png',
             'popup': f"<div style='font-size:12px;'>地震時間：{pd.to_datetime(time, unit='s')}<br>" \
                      f"位置：北緯 {lat}度，東經 {lon}度<br>" \
                      f"即在{place}<br>" \
