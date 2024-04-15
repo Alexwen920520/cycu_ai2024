@@ -37,6 +37,7 @@ features = [
                 'fillOpacity': 0.6,
                 'stroke': 'false',
                 'radius': 10
+             
             }
         }
     }
