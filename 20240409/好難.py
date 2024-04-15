@@ -5,7 +5,7 @@ import folium
 df = pd.read_csv('/workspaces/cycu_ai2024/20240409/地震活動彙整_638488057641011625.csv', encoding='big5', skiprows=1)
 
 # 提取地震位置的經緯度
-locations = df[['C', 'D']].values
+locations = df[['經度', '緯度']].values
 
 # 創建一個新的folium地圖實例
 m = folium.Map(location=[locations[0][0], locations[0][1]], zoom_start=13)
