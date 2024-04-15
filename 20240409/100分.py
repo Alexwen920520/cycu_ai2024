@@ -47,7 +47,7 @@ features = [
 TimestampedGeoJson(
     {'type': 'FeatureCollection', 'features': features},
     period='PT1H',
-    add_last_point=True,
+    add_last_point=False,
 ).add_to(m)
 
 # 保存地圖到指定的工作區
