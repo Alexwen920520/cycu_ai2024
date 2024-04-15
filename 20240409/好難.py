@@ -1,8 +1,8 @@
 import pandas as pd
 import folium
 
-# 讀取CSV數據
-data = pd.read_csv("地震活動彙整_638482892289528484.csv")
+# 讀取CSV數據，使用Big5編碼，跳過第一行
+data = pd.read_csv("/workspaces/cycu_ai2024/20240409/地震活動彙整_638482892289528484.csv", encoding='big5', skiprows=1)
 
 # 創建一個新的地圖
 m = folium.Map(location=[23.5, 121], zoom_start=7)
@@ -16,9 +16,7 @@ for index, row in data.iterrows():
     location = [row['latitude'], row['longitude']]
     # 將地點添加到列表中
     locations.append(location)
-
-# 使用PolyLine繪製地震震央的連接線
-folium.PolyLine(locations).add_to(m)
+    folium.Marker(location).add_to(m)
 
 # 使用Polygon繪製地震震央的多邊形
 folium.Polygon(locations).add_to(m)
