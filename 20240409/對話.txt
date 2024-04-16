@@ -32,6 +32,10 @@ GitHub Copilot
 如果你需要這個功能，你可能需要尋找其他的地圖視覺化庫，或者直接使用 JavaScript 和一個像是 Leaflet 的地圖庫來創建你的地圖。這可能需要更多的程式設計知識，但是會給你更多的靈活性來實現你需要的功能。
 對於目前的問題，我很抱歉我無法提供更多的幫助。
 Alexwen920520
+只有播放暫停的時候才能點及資訊嗎
+GitHub Copilot
+是的，根據目前 folium 的 TimestampedGeoJson 插件的設計，只有在播放暫停的時候，才能點擊地圖上的點來查看詳細資訊。這是因為在播放時，地圖上的點會不斷變化，如果允許在播放時點擊，可能會導致用戶點擊到錯誤的點。這是一個已知的限制，並且在 folium 的 GitHub 存儲庫中有相關的問題報告。
+Alexwen920520
 那我可以在暫停的時候只將滑鼠移到點上直接顯示嗎
 GitHub Copilot
 對不起，folium.plugins.TimestampedGeoJson 目前不支持滑鼠懸停（hover）來顯示彈出窗口的功能。這是一個已知的限制，並且在 folium 的 GitHub 存儲庫中有相關的問題報告。
