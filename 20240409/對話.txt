@@ -1,3 +1,9 @@
+我需要在地震位置上當滑鼠點擊後顯示地震數據
+GitHub Copilot
+您可以使用folium.Marker和folium.Popup來在地圖上添加標記，並在點擊標記時顯示地震數據。以下是如何修改您的代碼：
+我想要一段讀取CSV文件除了第一行並且使用big 5方式。使用folium.Polygon方法畫出一張地圖
+GitHub Copilot
+您可以使用pandas的read_csv函數讀取CSV文件，並使用skiprows=1參數來跳過第一行。然後，您可以使用folium.Polygon方法來在地圖上繪製多邊形。以下是一個範例：
 Alexwen920520
 我想在播放條結束後不自動重播
 GitHub Copilot
